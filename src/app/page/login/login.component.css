@@ -1,0 +1,13 @@
+.f-icon {
+    width: 15px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.btn-center {
+    text-align: center;
+}

@@ -1,0 +1,4 @@
+<div class="row" ng-class="home">
+  <div align-self-center class="col-2 center " *ngFor="let img of image" (click)="select(img)"><img src="{{img.image}}" style="width: 100%;"
+      alt="error"  [ngClass]="{'selectItem':check.id===img.id}"></div>
+</div>

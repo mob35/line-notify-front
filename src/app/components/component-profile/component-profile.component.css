@@ -1,0 +1,12 @@
+.center {
+    display: inline-block;
+     /* height: calc(96vh - 145px); */
+    text-align: center;
+    width: 100vw;
+    vertical-align: middle;
+}
+
+.margin-top {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}

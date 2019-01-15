@@ -1,0 +1,17 @@
+[class*="col-"] {
+    margin: 5px;
+    padding: 0px
+  }
+
+  .selectItem {
+    border: 5px solid indianred;
+    border-radius: 2%;
+  }
+
+  .center {
+    display: inline-block; 
+    text-align: center;
+    width: 100vw;
+    vertical-align: middle;
+}
+

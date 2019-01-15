@@ -1,0 +1,11 @@
+.center {
+    display: inline-block;
+    text-align: center;
+    width: 100vw;
+    vertical-align: middle;
+}
+
+.margin{
+    margin-top: 30px !important;
+    margin-bottom: 30px !important;
+}
