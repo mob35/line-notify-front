@@ -19,6 +19,7 @@ export class HomeComponent implements OnInit {
   }
   testNotify(){
     console.log('object');
+    window.location.href="https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=UxOzoFBdQrzhSghQdQTelG&redirect_uri=https://line-notify-front.herokuapp.com/home&scope=notify&state=NO_STATE"
   }
 
 }
