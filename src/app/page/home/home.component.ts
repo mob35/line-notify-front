@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
       if (params.code) {
         this.code = params['code'];
         console.log(this.code);
-        // this.getToken();
+        this.getToken();
       }
     });
   }
