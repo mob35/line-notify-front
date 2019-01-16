@@ -13,6 +13,8 @@ import { SharedComponent } from './components/shared/shared.component';
 
 import { ComponentProfileComponent } from './components/component-profile/component-profile.component';
 import { FacebookModule } from 'ngx-facebook';
+import { HttpClientModule } from '@angular/common/http';
+import { RestApiService } from './providers/rest-api-service/rest-api.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,12 +33,13 @@ import { FacebookModule } from 'ngx-facebook';
     MatGridListModule,
     MatIconModule,
     AppRoutingModule,
-    FacebookModule.forRoot()
+    FacebookModule.forRoot(),
+    HttpClientModule
   ],
   exports: [
     MatButtonModule, MatCheckboxModule, MatGridListModule
   ],
-  providers: [],
+  providers: [RestApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
