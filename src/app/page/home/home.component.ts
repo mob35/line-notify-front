@@ -20,7 +20,7 @@ export class HomeComponent implements OnInit {
       if (params.code) {
         this.code = params['code'];
         console.log(this.code);
-        this.getToken();
+        // this.getToken();
       }
     });
   }
@@ -40,16 +40,16 @@ export class HomeComponent implements OnInit {
   }
 
   async getToken() {
-    const body = new HttpParams()
-    .set('grant_type', 'authorization_code')
-    .set('code', this.code)
-    .set('redirect_uri', 'https://line-notify-front.herokuapp.com/home')
-    .set('client_id', 'UxOzoFBdQrzhSghQdQTelG')
-    .set('client_secret', 'snij94Bv2deyxqGrv4sf91ZNgvbAv2woRdzFAFh9qUs');
-    
+    // const body = new HttpParams()
+    // .set('grant_type', 'authorization_code')
+    // .set('code', this.code)
+    // .set('redirect_uri', 'https://line-notify-front.herokuapp.com/home')
+    // .set('client_id', 'UxOzoFBdQrzhSghQdQTelG')
+    // .set('client_secret', 'snij94Bv2deyxqGrv4sf91ZNgvbAv2woRdzFAFh9qUs');
+
     try {
-      const res: any = await this.api.getToken('https://notify-bot.line.me/oauth/token', body);
-      console.log(res.access_token);
+      const res: any = await this.api.getToken('https://email-trigger.herokuapp.com/api/tigger', { code: this.code });
+      console.log(res);
     } catch (error) {
       console.log(error)
       throw error;

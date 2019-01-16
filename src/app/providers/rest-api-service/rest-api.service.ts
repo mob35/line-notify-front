@@ -37,8 +37,6 @@ export class RestApiService {
   }
 
   getToken(url: string, Body: any) {
-    console.log(url);
-    console.log(Body);
     return this.http.post(url, Body, { headers: this.authorizationHeaderUrlencoded() }).toPromise();
   }
 
