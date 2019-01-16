@@ -22,7 +22,7 @@ import { RestApiService } from './providers/rest-api-service/rest-api.service';
     ComponentFramesProfileComponent,
     HomeComponent,
     SharedComponent,
-    ComponentProfileComponent
+    ComponentProfileComponent,
   ],
   imports: [
     BrowserModule,

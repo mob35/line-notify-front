@@ -7,7 +7,7 @@ import { FacebookService, InitParams, UIParams, UIResponse, LoginResponse } from
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'robu-web';
+  title = 'test-web';
 
   constructor(private fb: FacebookService) {
     const initParams: InitParams = {

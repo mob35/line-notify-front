@@ -5,9 +5,9 @@ const path = require('path');
 const app = express();
 
 app.use(express.static(path.join(__dirname, 'dist')));
-app.use(express.static(path.join(__dirname, 'dist/robu-web')));
+app.use(express.static(path.join(__dirname, 'dist/test-web')));
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'dist/robu-web/index.html'));
+  res.sendFile(path.join(__dirname, 'dist/test-web/index.html'));
 });
 
 const port = process.env.PORT || 3000;
