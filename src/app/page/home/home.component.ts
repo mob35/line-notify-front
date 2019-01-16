@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
   getNotify() {
     let data: any = {
       client_id: 'UxOzoFBdQrzhSghQdQTelG',
-      redirect_uri: 'http://localhost:4200/home'
+      redirect_uri: 'https://line-notify-front.herokuapp.com/home'
     }
     window.location.href = "https://notify-bot.line.me/oauth/authorize?response_type=code&client_id=" + data.client_id + "&redirect_uri=" + data.redirect_uri + "&scope=notify&state=NO_STATE";
   }
