@@ -47,8 +47,13 @@ export class HomeComponent implements OnInit {
     // .set('client_id', 'UxOzoFBdQrzhSghQdQTelG')
     // .set('client_secret', 'snij94Bv2deyxqGrv4sf91ZNgvbAv2woRdzFAFh9qUs');
 
+    console.log(this.code);
+    let body: any = {
+      code: this.code
+    }
+    console.log(body);
     try {
-      const res: any = await this.api.getToken('https://email-trigger.herokuapp.com/api/tigger', { code: this.code });
+      const res: any = await this.api.getToken('https://email-trigger.herokuapp.com/api/tigger', body);
       console.log(res);
     } catch (error) {
       console.log(error)

@@ -19,6 +19,11 @@ export class RestApiService {
     const headers = new HttpHeaders().set('Content-Type', 'application/x-www-form-urlencoded');
     return headers;
   }
+  private authorizationHeaderJson() {
+
+    const headers = new HttpHeaders().set('Content-Type', 'application/json');
+    return headers;
+  }
 
   get(url: string) {
     return this.http.get(url, { headers: this.authorizationHeader() }).toPromise();
@@ -36,8 +41,9 @@ export class RestApiService {
     return this.http.delete(url, { headers: this.authorizationHeader() }).toPromise();
   }
 
-  getToken(url: string, Body: any) {
-    return this.http.post(url, Body, { headers: this.authorizationHeaderUrlencoded() }).toPromise();
+  getToken(url: string, body: any) {
+    console.log(body);
+    return this.http.post(url, body, { headers: this.authorizationHeaderJson() }).toPromise();
   }
 
 }
