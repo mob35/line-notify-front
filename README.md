@@ -8,6 +8,7 @@
 **Typescript Home**
 ต้องการ **Client ID** และ **Client Secret** จากการลงทะเบียน เพื่อส่งไป Get Token จาก Server
 
+**redirect_uri** ลิ้งที่ Callback กลับมาหน้าที่ต้องการ ต้องตรงกับที่ลงทะเบียนไว้
 ```html
   getNotify() {
     let data: any = {
